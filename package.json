@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Siydulislam/async-logic-data-fetching-redux-thunk#readme",
   "dependencies": {
+    "node-fetch": "^2.6.9",
     "redux": "^4.2.1"
   }
 }
