@@ -1,0 +1,23 @@
+{
+  "name": "async-logic-data-fetching-redux-thunk",
+  "version": "1.0.0",
+  "description": "\"# async-logic-data-fetching-redux-thunk\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siydulislam/async-logic-data-fetching-redux-thunk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siydulislam/async-logic-data-fetching-redux-thunk/issues"
+  },
+  "homepage": "https://github.com/Siydulislam/async-logic-data-fetching-redux-thunk#readme",
+  "dependencies": {
+    "redux": "^4.2.1"
+  }
+}
