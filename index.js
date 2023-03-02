@@ -1,5 +1,6 @@
 const { createStore, applyMiddleware } = require("redux");
-const { delayActionMiddleware, fetchTodosMiddleware } = require("./middlewares");
+const { fetchTodos } = require("./functions");
+const { delayActionMiddleware, fetchAsyncMiddleware } = require("./middlewares");
 
 // initialState
 const initialState = {
@@ -35,7 +36,7 @@ const todoReducer = (state = initialState, action) => {
 }
 
 // store
-const store = createStore(todoReducer, applyMiddleware(delayActionMiddleware, fetchTodosMiddleware));
+const store = createStore(todoReducer, applyMiddleware(delayActionMiddleware, fetchAsyncMiddleware));
 
 // subscribe to state changes
 store.subscribe(() => {
@@ -48,6 +49,4 @@ store.subscribe(() => {
 //     payload: "Learn Redux",
 // });
 
-store.dispatch({
-    type: "todos/fetchTodos"
-});
+store.dispatch(fetchTodos);
